@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<table>
+    <caption>과일 종류 및 가격</caption>
+    <thead>
+       <tr>
+      	<th colspan="3" scope="colgroup">분류</th>
+       </tr>
+        <tr>
+            <th colspan="2" scope="col">과일</th>
+            <th scope="col">가격</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="2" scope="rowgroup">종류</th>            
+            <th scope="row">사과</th>
+            <td>1,000원</td>   
+        </tr>
+        <tr>           
+            <th scope="row">배</th>
+            <td>2,000원</td>   
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
