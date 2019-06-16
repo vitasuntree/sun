@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form member join</title>
+    <style>
+        table {width:100%}
+       	th, td {padding:10px; border:1px solid #000}
+   	</style>
+</head>
+<body>
+<h1>회원가입</h1>
+<br>
+
+<form name="join" action="naver.com" method="get">
+	<fieldset>
+<legend>회원 정보 입력</legend>
+<h2>기관정보</h2>
+    <table>
+        <caption>기관정보 입력</caption>
+        <tbody>
+            <tr>
+                <th scope="row"><label for="schoolname">기관명</label></th>            
+                <td><input type="text" id="schoolname" name="schoolname" value="수지고등학교"></td> 
+            </tr>
+             <tr>
+                <th scope="row"><label for="schoolid">기관아이디</label></th>            
+                <td><input type="text" id="schoolid" name="schoolid" value="H-2-102343"></td> 
+            </tr>
+            <tr>
+                <th scope="row"><label for="adress">기관주소</label></th>            
+                <td><input type="text" id="adress" name="adress" value="(18621)경기도 용인시 수지구 수풍로 73(풍덕천동)"></td> 
+            </tr>
+            <tr>
+                <th scope="row"><label for="pw">비밀번호</label></th>            
+                <td>
+                    <input type="password" id="pw" name="pw" placeholder="비밀번호를 입력해주세요.">
+                    <p>영문 대소문자 조합으로 9~20자 이내로 사용할 수 있습니다.</p>
+                </td> 
+            </tr>
+            <tr>
+                <th scope="row"><label for="pwcheck">비밀번호</label></th>            
+                <td><input type="password" id="pwcheck" name="pwcheck" placeholder="동일한 비밀번호를 입력해주세요."></td> 
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>담당자 정보</h2>
+    <table>
+        <caption>담당자 정보 입력</caption>
+        <tbody>
+            <tr>
+                <th scope="row"><label for="name">담당자 성명</label></th>            
+                <td><input type="text" id="name" name="name" placeholder="담당자 성명을 입력해 주세요."></td> 
+            </tr>
+             <tr>
+                <th scope="row"><label for="email">담당자 이메일</label>
+                </th>            
+                <td>
+                    <input type="text" id="email" name="email" value="H-2-102343">
+                    <button type="button">중복확인</button><br>
+                    <p>아이디, 비밀번호를 찾는 중요한 정보이니 실제 기관 사용 이메일 주소를 정확히 기재해 주세요.</p>
+                    <p>공제 진행 상황에 따른 E-mail 알람을 받으실 수 있습니다. </p>
+                </td> 
+            </tr>
+            <tr>
+                <th scope="row"><label for="number">담당자 연락처 </label></th>            
+                <td>
+                    <select name="type" id="number">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="019">019</option>
+                    </select>
+                    -
+                    <input type="text" name="number"> - <input type="text" name="number">
+                </td> 
+            </tr>
+             <tr>
+                <th scope="row"><label for="file">증빙 서류</label></th>            
+                <td>
+                    <button type="button">증빙 서류 출력</button>
+                    <p>좌측 버튼을 클릭하시어 인쇄된 증빙서류로 기관장의 직인이 포함된 스캔을 첨부해 주세요.</p>
+                    <input type="file" id="file" name="file">
+                </td> 
+            </tr>
+        </tbody>
+    </table>
+
+<button type="reset"><span class="hide">취소</span></button>
+<button type="submit">신청완료</button>
+</fieldset>
+</form>
+
+</body>
+</html>
